@@ -84,6 +84,11 @@ export default function App() {
                     alt={event.title}
                     className="card-img-top img-fluid"
                   />
+                  <span
+                    className={`badge position-absolute top-0 start-0 bg-white text-dark m-2`}
+                  >
+                    {event.isOnline ? "Online Event" : "Offline Event"}
+                  </span>
                   <div className="card-body">
                     <p>
                       <small>{event.timingStart} </small>{" "}
@@ -99,5 +104,5 @@ export default function App() {
         </div>
       </div>
     </main>
-  );
+  )
 }
